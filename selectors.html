@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day 2 - Selectors</title>
+
+    <style>
+        /* Universal Selector */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            text-align:center;
+            padding:40px;
+        }
+
+        /* Element Selector */
+        h1{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        /* ID Selector */
+        #main-heading{
+            text-transform:uppercase;
+            letter-spacing:2px;
+        }
+
+        /* Class Selector */
+        .card{
+            width:350px;
+            margin:20px auto;
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .text{
+            color:#555;
+            margin:15px 0;
+        }
+
+        /* Group Selector */
+        h2,p{
+            margin-bottom:10px;
+        }
+
+        button{
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:6px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#084298;
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">CSS Day 2</h1>
+
+    <div class="card">
+        <h2>Learning CSS Selectors</h2>
+        <p class="text">
+            This page demonstrates Element, ID, Class, Universal,
+            Group and Hover Selectors.
+        </p>
+
+        <button>Explore CSS</button>
+    </div>
+
+</body>
+</html>
