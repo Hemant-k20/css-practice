@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Day 3 - Box Model</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:380px;
+    background:white;
+    border:3px solid #2563eb;
+    padding:30px;
+    margin:20px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+h1{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+p{
+    color:#555;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h1>CSS Box Model</h1>
+
+    <p>
+        This example demonstrates Margin, Border,
+        Padding and Content with a modern card layout.
+    </p>
+
+    <button>Explore</button>
+</div>
+
+</body>
+</html>
