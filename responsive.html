@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 6 - Responsive Design</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:90%;
+}
+
+header{
+    font-size:20px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Responsive Website</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>HTML</h2>
+<p>Structure of a web page.</p>
+<button>Learn</button>
+</div>
+
+<div class="card">
+<h2>CSS</h2>
+<p>Style your website beautifully.</p>
+<button>Learn</button>
+</div>
+
+<div class="card">
+<h2>JavaScript</h2>
+<p>Add interactivity to your website.</p>
+<button>Learn</button>
+</div>
+
+</div>
+
+</body>
+</html>
